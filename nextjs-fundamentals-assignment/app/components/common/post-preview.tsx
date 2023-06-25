@@ -12,9 +12,6 @@ const PostPreview = ({ post }: Props) => {
                 <h2 className="post-title">
                     {post.title}
                 </h2>
-                <h3 className="post-subtitle">
-                    {post.body}
-                </h3>
             </Link>
             <p className="post-meta">Posted by user {post.userId}</p>
         </div>
