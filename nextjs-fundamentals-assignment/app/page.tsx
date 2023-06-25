@@ -19,9 +19,9 @@ export default function Home() {
       <div className="container">
         <div className="row">
           <div className="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            {posts?.map((post) => {
+            {posts?.map((post, index) => {
               return (
-                <PostPreview post={post} />
+                <PostPreview post={post} key={`post_preview_${index}`} />
               );
             })}
             <ul className="pager">
